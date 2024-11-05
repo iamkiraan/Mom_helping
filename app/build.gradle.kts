@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+
     namespace = "com.example.mom"
     compileSdk = 34
 
@@ -18,7 +19,9 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
     }
+
 
     buildTypes {
         release {
@@ -59,6 +62,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,4 +77,28 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx.v261)
     implementation(libs.ui.tooling.preview)
     implementation(libs.kotlinx.coroutines.android)
+
+    //for websocket
+    implementation(libs.okhttp)
+
+
+    // Scarlet
+    implementation(libs.scarlet)
+    implementation(libs.websocket.okhttp)
+    implementation(libs.stream.adapter.rxjava2)
+
+//RX
+    implementation(libs.rxjava)
+    implementation(libs.rxandroid)
+    implementation(libs.rxkotlin)
+
+// Gson
+    implementation(libs.gson)
+
+
+        implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+
+
+
 }

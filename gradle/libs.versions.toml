@@ -2,6 +2,7 @@
 activityComposeVersion = "1.7.2"
 agp = "8.5.0"
 coreKtxVersion = "1.12.0"
+gson = "2.10.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -12,15 +13,26 @@ lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.9.2"
 composeBom = "2024.04.01"
 lifecycleRuntimeKtxVersion = "2.6.1"
+lifecycleViewmodelCompose = "2.8.7"
 material3 = "1.3.0"
+okhttp = "4.9.3"
+rxandroid = "2.1.1"
+rxjava = "2.2.21"
+rxkotlin = "2.4.0"
+scarlet = "0.1.12"
+streamAdapterRxjava2 = "0.1.12"
 ui = "1.7.3"
 uiToolingPreview = "1.7.3"
+appcompat = "1.7.0"
+websocketOkhttp = "0.1.12"
 
 [libraries]
 androidx-activity-compose-v172 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-ktx-v1120 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
 androidx-lifecycle-runtime-ktx-v261 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -36,8 +48,16 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxandroid" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
+rxkotlin = { module = "io.reactivex.rxjava2:rxkotlin", version.ref = "rxkotlin" }
+scarlet = { module = "com.tinder.scarlet:scarlet", version.ref = "scarlet" }
+stream-adapter-rxjava2 = { module = "com.tinder.scarlet:stream-adapter-rxjava2", version.ref = "streamAdapterRxjava2" }
 ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
 ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+websocket-okhttp = { module = "com.tinder.scarlet:websocket-okhttp", version.ref = "websocketOkhttp" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
