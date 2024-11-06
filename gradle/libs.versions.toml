@@ -25,6 +25,7 @@ ui = "1.7.3"
 uiToolingPreview = "1.7.3"
 appcompat = "1.7.0"
 websocketOkhttp = "0.1.12"
+runtimeLivedata = "1.7.5"
 
 [libraries]
 androidx-activity-compose-v172 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
@@ -58,6 +59,7 @@ ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
 ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 websocket-okhttp = { module = "com.tinder.scarlet:websocket-okhttp", version.ref = "websocketOkhttp" }
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
