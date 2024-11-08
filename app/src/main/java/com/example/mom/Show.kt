@@ -11,9 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavHostController
+import com.example.mom.Screens
 
 @Composable
-fun Show(viewModel: ChatModel = viewModel()) {
+fun Show(navController : NavHostController,viewModel: ChatModel = viewModel()) {
     var inputText by remember { mutableStateOf("") }
     val socketStatus by viewModel.socketStatus.observeAsState(false)
     val messages by viewModel.messages.observeAsState("")
@@ -36,7 +38,10 @@ fun Show(viewModel: ChatModel = viewModel()) {
         ) {
             Row(horizontalArrangement = Arrangement.spacedBy(80.dp)) {
                 Button(
-                    onClick = { viewModel.connect() },
+                    onClick = {
+                        viewModel.connect()
+                        navController.navigate(Screens.QuizCheck.route)
+                              },
                     shape = RoundedCornerShape(6.dp),
                     modifier = Modifier.padding(start = 30.dp)
                 ) {
